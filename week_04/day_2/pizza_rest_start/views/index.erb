@@ -1,0 +1,20 @@
+<p>All the pizza orders: </p>
+
+<% @orders.each do | order | %>
+  <p>
+    Name <%= order.pretty_name() %>
+    <br/>
+    Order: <%= order.quantity %> x <%= order.topping %>
+    <form method="get" action="/pizza-orders/<%= order.id %>">
+      <input type="submit" value="Show Order" />
+    </form>
+    <form method="post" action="/pizza-orders/<%= order.id %>/delete">
+      <input type="submit" value="Delete Order" />
+    </form>
+    <form method="get" action="/pizza-orders/<%= order.id %>/edit">
+      <input type="submit" value="Edit Order" />
+    </form>
+    <!-- # Don't use forms for gets (post only).  Use a styled hyperlink. -->
+  </p>
+
+<% end %>

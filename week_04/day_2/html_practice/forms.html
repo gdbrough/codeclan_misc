@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <form action="." method="get">
+    <fieldset>
+      <label for="yourName">Your Name:</label>
+      <input placeholder="Enter your name here" type="text" id="yourName" name="yourName" required />
+      <label for="yourEmail">Your Email Address</label>
+      <input type="email" id="yourEmail" name="yourEmail" required/>
+      <input type="submit" value="Submit" />
+      <label for="favColour">Your Favourite Colour</label>
+      <input type="color" />
+
+      <select id="yourGender" name="yourGender">
+        <option value="M">male</option>
+        <option value="F">female</option>
+        <option value="O">other</option>
+        <option value="P">prefer not to say</option>
+      </select>
+
+      <label for="option1">option1</label>
+      <input type="radio" id="option1" name="myOption" />
+
+      <label for="option2">option2</label>
+      <input type="radio" id="option2" name="myOption"/>
+
+      <label for="orange">Orange</label>
+      <input type="checkbox" name="fruit" id="orange">
+      <label for="apple">Apple</label>
+      <input type="checkbox" name="fruit" id="apple">
+
+    </fieldset>
+  </form>
+
+</body>
+</html>
